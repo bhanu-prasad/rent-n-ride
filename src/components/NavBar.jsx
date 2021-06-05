@@ -6,7 +6,7 @@ const NavBar = (props) => {
     <div>
         <nav class="navbar navbar-default fixed-top">
         <div className="container">
-          <a href="#home" className="nav-logo">Brand Logo</a>
+          <a href="#home" className="nav-logo nav-link">Brand Logo</a>
           <ul class="nav-menu">
               <li class="nav-item">
                   <a href="#about" class="nav-link">About <i className="nav-icons fas fa-info fa-xs"></i></a>

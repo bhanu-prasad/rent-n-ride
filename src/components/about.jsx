@@ -1,31 +1,30 @@
 import React, { Component } from 'react'
-import Carman from "../Assets/carman.jpg"
 const services =[{
     id:1,
-    tileclass:"lni-car",
+    tileclass:"lni-rupee",
     title:"Affodable",
     desc:"Short description for the ones \n who look for something new. "
     
 },
 {
     id:2,
-    tileclass:"lni-bar-chart",
-    title:"Saas Business",
+    tileclass:"lni-car",
+    title:"Regular maintanance of Cars",
     desc:"Short description for the ones \n who look for something new."
     
 },
 {
     id:3,
-    tileclass:"lni-brush",
-    title:"Agency",
+    tileclass:"fas fa-tools",
+    title:"Easy Renting",
     desc:"Short description for the ones \n who look for something new."
     
 },
 {
     id:4,
-    tileclass:"lni-bulb",
-    title:"App Landing",
-    desc:"Short description for the ones \n who look for something new."
+    tileclass:"far fa-clock",
+    title:"Around Clock",
+    desc:"24/7 Service."
     
 }
 
@@ -53,7 +52,7 @@ class About extends Component {
     render() { 
         return ( 
         <div id="about" className="component-size about-page"> 
-            <h2>About Us</h2>
+            <h2 className="page-title">About Us</h2>
             <section id="service" className="services-area">
                 <div className="container">
                     <div className="row">
@@ -75,12 +74,6 @@ class About extends Component {
                         <Servcomp tileclass={services[3].tileclass} title={services[3].title} desc={services[3].desc}/>
                     </div>
                     </div> 
-                </div> 
-         
-                <div className="services-image d-lg-flex align-items-center">
-                    <div className="image">
-                        <img src={Carman} className="image-responsive" alt="carman" />
-                    </div>
                 </div> 
             </div>
             </section>   

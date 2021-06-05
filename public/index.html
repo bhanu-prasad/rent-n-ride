@@ -22,7 +22,7 @@
   $(function () {
     $(document).scroll(function () {
       var $nav = $(".navbar-default");
-      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height()-20);
     });
   });
 </script>
