@@ -10,6 +10,7 @@
     <title>Rent N Ride</title>
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="undefined" crossorigin="anonymous"> -->
     <script src="https://kit.fontawesome.com/6c072b636d.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -17,3 +18,11 @@
   </body>
 </html>
 <script src="script.js"></script>
+<script>
+  $(function () {
+    $(document).scroll(function () {
+      var $nav = $(".navbar-default");
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+  });
+</script>
