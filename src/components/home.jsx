@@ -3,7 +3,11 @@ class Home extends Component {
     state = {  }
     render() { 
         return ( 
-            <h1>Welcome to Home</h1>
+            <div className="component-size home_bg">
+                <div className="home-title">
+                    <h1>Home</h1>
+                </div>
+            </div>
         );
     }
 }

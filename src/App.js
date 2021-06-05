@@ -1,22 +1,18 @@
 import React, { Component } from 'react';
 import NavBar from "./components/NavBar"
 import Home from "./components/home"
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import About from "./components/about"
+import Footer from "./components/footer"
+import Contact from "./components/contact"
 class App extends Component {
   render() { 
     return ( 
       <React.Fragment>
-        <Router>
-          <NavBar />
-          <Switch>
-            <Route path="/" component={Home}/>
-          </Switch>
-        </Router>
+            <NavBar />
+            <Home/>
+            <About/>
+            <Contact/>
+            <Footer/>
       </React.Fragment>
      );
   }

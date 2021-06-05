@@ -1,17 +1,28 @@
 import React from "react"
-import {Link} from "react-router-dom"
+
 const NavBar = (props) => {
   return (
-      <nav className="navbar navbar-light bg-dark">
-              <div className="container justify-content-between">
-                <Link to="/" className="navbar-brand text-light">Brand Logo</Link>
-                <div>
-                    <Link to="/" className="m-3">About</Link>
-                    <Link to="/" className="m-3">Book Now</Link>
-                    <Link to="/" className="m-3">Policy</Link>
-                </div>
-              </div>
-      </nav>
+    <nav class="navbar">
+      <div className="container">
+        <a href="#home" className="nav-logo">Brand Logo</a>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="#about" class="nav-link">About <i className="nav-icons fas fa-info fa-xs"></i></a>
+            </li>
+            <li class="nav-item">
+                <a href="#bookride" class="nav-link">Book Now <i class="nav-icons fas fa-car"></i></a>
+            </li>
+            <li class="nav-item">
+                <a href="#contact" class="nav-link">Contact Us <i class="nav-icons fas fa-at "></i></a>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
   )
 };
 
