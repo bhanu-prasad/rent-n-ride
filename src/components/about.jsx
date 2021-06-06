@@ -65,17 +65,14 @@ class About extends Component {
                     <div className="row">
                         <div className="col-lg-8">
                             <div className="row">
-                                    <Servcomp tileclass={services[0].tileclass} title={services[0].title} desc={services[0].desc}/>
-                                    <Servcomp tileclass={services[1].tileclass} title={services[1].title} desc={services[1].desc}/>
-                                <div/>    
-                            <div/>    
-                        <div/>    
-                        <Servcomp tileclass={services[2].tileclass} title={services[2].title} desc={services[2].desc}/>
-                        <Servcomp tileclass={services[3].tileclass} title={services[3].title} desc={services[3].desc}/>
+                                <Servcomp tileclass={services[0].tileclass} title={services[0].title} desc={services[0].desc}/>
+                                <Servcomp tileclass={services[1].tileclass} title={services[1].title} desc={services[1].desc}/>
+                                <Servcomp tileclass={services[2].tileclass} title={services[2].title} desc={services[2].desc}/>
+                                <Servcomp tileclass={services[3].tileclass} title={services[3].title} desc={services[3].desc}/>
+                            </div>
+                        </div> 
                     </div>
-                    </div> 
-                </div> 
-            </div>
+                </div>
             </section>   
 		</div>
          );

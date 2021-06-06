@@ -11,9 +11,9 @@ class Home extends Component {
                    <div>
                     <form action="/" method="post" className="form-body">
                             <div className="d-flex flex-column">
-                                <label for="pickl">Pickup Location :</label>
+                                <label htmlFor="pickl">Pickup Location :</label>
                                 <input type="text" name="pickl" placeholder="Pickup Location"/>
-                                <label for="dropl">Drop Location :</label>
+                                <label htmlFor="dropl">Drop Location :</label>
                                 <input type="text" name="dropl" placeholder="Drop Location"/>
                                 
                             </div>
